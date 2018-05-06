@@ -1,4 +1,5 @@
 # e-Schedule
+![e-schedule-sample](https://user-images.githubusercontent.com/37752740/39675503-8e889c98-5164-11e8-9da6-d7ddb57d657d.gif)
 
 It was developed for educational purposes.
 
