@@ -1,0 +1,84 @@
+﻿
+<html>
+    <head>
+        <title>Προσθήκη Ανακοίνωσης</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            body{
+                background-color:white;
+                font: 16px Arial,sans-serif;
+                font-size:90%;
+                margin:0;
+            }
+
+            form{
+                background-color:#3366FF;
+                color:white;
+            }
+            a{
+                color:white;
+                text-decoration:none;
+            }
+
+            a:hover {
+                color: #990000;
+                text-decoration: underline;
+            }
+        </style>
+
+        <script type="text/javascript">
+
+            function check()
+            {
+                if (document.getElementById("textArea").value == ""
+                        || document.getElementById("textArea").value == undefined)
+                {
+                    alert("Το πεδίο της ανακοίνωσης δεν μπορεί να είναι κενό!");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+
+
+    <body>
+        <table style="width:100%; color:white; background-color:#3366FF; ">
+            <tr>
+                <td><a href="adminIndex.html">Αρχική</a></td>
+                <td><div style="text-align: right;"><a href="index.html">Αποσύνδεση</a></div></td>
+            </tr>
+        </table>
+
+        <form id="form0" ACTION="addAnnouncement.jsp" METHOD="POST">
+            <br>
+            Παρακαλώ εισάγετε το όνομα του καθηγητή στο παρακάτω πλαίσιο.Αν η ανακοίνωση δεν είναι από κάποιον καθηγητή μην εισάγετε τίποτα:<br><br>
+            <input type="text" name="textBox">
+
+            <br><br><br>
+
+            Παρακαλώ εισάγετε στο παρακάτω πλαίσιο την ανακοίνωση:<br><br>
+            <textarea rows="4" cols="50" id="textArea" name="textArea"></textarea>>
+
+            <br><br><br>
+
+            <input type="submit" value="Προσθήκη" id="submit" name="submit" >
+            <input type="reset" value="Επαναφορά" name="reset">
+
+            <br><br><br>
+        </form>
+
+
+        <script type="text/javascript">
+            document.getElementById("form0").onsubmit = function () {
+                return check();
+            };
+        </script>
+
+    </body>
+
+
+
+</html>

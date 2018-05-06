@@ -1,0 +1,121 @@
+﻿<html>
+    <head>
+        <title>Αρχική Σελίδα</title>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                background-color:white;
+                font: 16px Arial,sans-serif;
+                font-size:90%;
+                margin:0;
+            }
+
+
+            ul{
+                background-color:#3366FF;
+                color:white;
+                list-style-type:none;
+            }
+
+            a{
+                color:white;
+                text-decoration:none;
+            }
+
+            a:hover {
+                color: #990000;
+                text-decoration: underline;
+            }
+
+            input[type=submit] {
+
+                background: #0066A2;
+
+                color: white;
+
+                border-style: outset;
+
+                border-color: #0066A2;
+
+                height: 25px;
+
+                width: 50px;
+
+                font: bold 15px arial, sans-serif;
+
+                text-shadow:none;
+
+            }
+            input[type=text]{
+                height: 30px;
+                width: 150px;
+            }
+            input[type=password]{
+                height: 30px;
+                width: 150px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h3 align="center" style="background-color:#3366FF; color:white; margin:0;"><br>ΤΕΧΝΟΛΟΓΙΚΟ ΕΚΠΑΙΔΕΥΤΙΚΟ ΙΔΡΥΜΑ ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ<br>ΤΜΗΜΑ ΜΗΧΑΝΙΚΩΝ ΠΛΗΡΟΦΟΡΙΚΗΣ Τ.Ε.<br><br></h3>
+        <br>
+        <table style= "width:100%;">
+            <tr>
+                <td style="width:25%;">
+                    <div>
+                        <ul style="width:70%; margin-top:0px;">
+
+                            <li><u><b>Βασικές Επιλογές</b></u></li>
+                            <br>
+                            <li><a href="schedule.html">Πρόγραμμα Μαθημάτων</a></li>
+                            <br>
+                            <li><a href="announcements.jsp">Ανακοινώσεις</a></li>
+                            <br>
+                            <li><a href="links.html">Σχετικά links και Επικοινωνία</a></li>
+                            <br>
+                        </ul>
+                    </div>
+                </td>
+
+
+                <td style="width:50%;">
+                    <h4>Καλωσήρθατε στο ηλεκτρονικό πρόγραμμα μαθημάτων</h4>
+                    <p>Το ηλεκτρονικό πρόγραμμα μαθημάτων αποτελεί ένα Σύστημα στο οποίο
+                        οι φοιτητές του τμήματος θα μπορούν να ενημερώνονται για το πρόγραμμα
+                        μαθημάτων του εκάστοτε εξαμήνου.Επίσης θα μπορούν να βλέπουν διάφορες 
+                        ανακοινώσεις που θα ανεβάζουν καθηγητές σχετικά με τα μαθήματα που διδάκουν.
+                    </p>
+                </td>
+
+
+                <td style="width:25%;">	
+                    <form id="firstForm"  action="login.jsp" method="POST">
+                        <div align="right">
+                            <ul style="text-align:left; width:70%; margin-top:0px;">
+
+                                <li><u><b>Είσοδος Χρήστη</b></u></li>
+                                <br>
+                                <li>  <input type="text" name="username" placeholder="username">  </li>
+                                <br>
+                                <li>  <input type="password" name="password" placeholder="password">  </li>
+                                <br>
+                                <li>  <input type="submit" value="Είσοδος" style="width:50%;">  </li>
+                                <br>
+                            </ul>
+                        </div>
+                    </form>
+
+                </td>
+            </tr>
+        </table>
+
+        <div align="center">
+            <img src="images/img1.jpg" width="650" height="350"/>
+        </div>
+    </body>
+
+</html>
